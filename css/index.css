@@ -1,0 +1,74 @@
+#name {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    font-style: italic;
+}
+h2 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+a {
+    color: rgb(74, 169, 109);
+}
+body {
+    height: 100vh;
+    background-color: rgba(204, 215, 175, 0.994);
+    font-family: "Roboto", sans-serif;
+}
+section {
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+.connect-list {
+    display: flex;
+}
+#about {
+    text-align: center;
+}
+#about h2 {
+    color: rgb(7, 201, 245);
+    font-size: 30px;
+    font-weight: 950;
+}
+#experience ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0.5em;
+    background-color: rgb(248, 253, 199);
+    color: rgb(90, 58, 7);
+    padding: 1cm;
+    border-radius: 0.5em;
+    border-color: rgb(68, 18, 115);
+    border-style: solid;
+}
+#connect {
+    list-style: none;
+    display: flexbox;
+    margin: 3em;
+    padding: 0.5em;
+    color: rgb(218, 218, 157);
+    background-color: rgb(52, 235, 225);
+    border-radius: 0.8em;
+}
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 60%;
+  }
+  /* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-github {
+    font-size: 70px;
+    background: #000405;
+    color: white;
+  }
