@@ -2,26 +2,28 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 3rem;
     font-style: italic;
+    padding-top:2ch;
+    color: rgb(3, 128, 53);
 }
 h2 {
     font-weight: bold;
     font-size: 3rem;
 }
 a {
-    color: rgb(74, 169, 109);
+    color: rgb(247, 252, 249);
 }
 body {
     height: 100vh;
     background-color: rgba(204, 215, 175, 0.994);
     font-family: "Roboto", sans-serif;
+    margin: 0;
 }
 section {
     padding: 1rem;
     margin-bottom: 3rem;
+   
 }
-.connect-list {
-    display: flex;
-}
+
 #about {
     text-align: center;
 }
@@ -43,13 +45,14 @@ section {
 }
 #connect {
     list-style: none;
-    display: flexbox;
-    margin: 3em;
+    flex-direction: row;
+    Margin: 1em;
     padding: 0.5em;
-    color: rgb(218, 218, 157);
-    background-color: rgb(52, 235, 225);
+    color: whitesmoke;
+    background-color:aqua;
     border-radius: 0.8em;
-}
+  }
+
 .fa {
     padding: 20px;
     font-size: 40px;
@@ -57,6 +60,9 @@ section {
     text-align: center;
     text-decoration: none;
     border-radius: 60%;
+    display: flex;
+    flex-direction:row;
+    
   }
   /* Facebook */
 .fa-facebook {
@@ -71,4 +77,43 @@ section {
     font-size: 70px;
     background: #000405;
     color: white;
+  }
+  #navigation ul {
+    display:flex;
+    gap: 10px;
+    padding-bottom:0;
+    padding-right: 15px;
+    list-style:none;
+    justify-content: space-between;
+   
+    
+  }
+  #navigation {
+    position:fixed;
+    display: auto-fit;
+    top:0;
+    background-color: rgb(114, 116, 120);
+    width: 100%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px; /* Space between rows and columns */
+  }
+  .grid-item {
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(105, 108, 108);
+    color: white;
+    border-radius: 0.8em;
+    padding: 0.5em;
+  }
+  .one-experience {
+    display: flex;
+    flex-direction: column;
+  }
+  .date {
+    font-weight: bold;
+    margin-right: 1em;
+    min-width: fit-content;
   }
