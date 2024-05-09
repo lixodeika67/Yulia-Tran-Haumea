@@ -46,7 +46,15 @@ body {
   padding-top: 2ch;
   color: #038035;
 }
-
+/*Profile Picture */
+#profile-picture {
+  border-radius: 50%;
+  margin: 1em;
+  width: 20vw;
+  border-color: rgb(139, 139, 140);
+  border-width:1dvi;
+  border-style:inset;
+}
 /* Sections */
 section {
   padding: 1rem;
@@ -61,11 +69,11 @@ a {
 }
 
 /* About Section */
-#about {
+/* #about {
     text-align: center;
 }
 #about h2 {
-    color: rgb(7, 201, 245);
+    color: rgb(130, 131, 131);
     font-size: 2rem;
     font-weight: 950;
 }
@@ -111,7 +119,7 @@ a {
   margin: 1em;
   padding: 0.5em;
   color: whitesmoke;
-  background-color: aqua;
+  background-color: rgb(105, 108, 108);
   border-radius: 0.8em;
   }
 
