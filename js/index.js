@@ -80,3 +80,36 @@ messageForm.addEventListener('submit', function(event) {
      event.target.reset();
 
 });
+//Lesson 15 
+const requestUrl = 'https://api.github.com/users/lixodeika67/repos';
+
+// Make a GET request to fetch repository 
+fetch(requestUrl)
+    .then((response) => {
+        // Check if the request was successful
+        if (!response.ok) {
+            throw new Error('Check Username'+ response.statusText);
+        }
+        
+        return response.json();
+    })
+    .then(data => {
+        
+        const repositories = data;
+        console.log(repositories);
+
+         /// Repos in List
+       
+         const projectSection = document.getElementById('projects');
+         const projectList = projectSection.querySelector('ul');
+    
+         for (let i = 0; i < repositories.length; i++) {
+             const project = document.createElement('li');
+             project.innerText = repositories[i].name;
+             projectList.appendChild(project);
+         }
+     })
+     .catch(error => {
+ 
+         console.error('Error:', error);
+     });
