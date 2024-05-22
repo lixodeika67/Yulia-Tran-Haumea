@@ -12,51 +12,66 @@
   
 
 </head>
-
 <body>
+    <header>
     <nav id="navigation">
-        <ul>
-            <li><a href=#about>About</a></li>
-            <li><a href=#experience>Experience</a></li>
-            <li><a href=#skills>Skills</a></li>
-            <li><a href=#projects>Projects</a></li>
-            <li><a href=#connect>Connect</a></li>
-        </ul>
+            <a href=#about>About</a>
+            <a href=#experience>Experience</a>
+            <a href=#skills>Skills</a>
+            <a href=#projects>Projects</a>
+            <a href=#connect>Connect</a>
+            <a href="#LeaveMessage">Leave a Message</a>  
+         <!-- Dropdown select for smaller screens -->
+         <select onchange="window.location.href=this.value;">
+            <option value="#about">About</option>
+            <option value="#experience">Experience</option>
+            <option value="#skills">Skills</option>
+            <option value="#projects">Projects</option>
+            <option value="#connect">Connect</option>
+            <option value="#LeaveMessage">Leave Message</option>
+        </select>
     </nav>
-    <h1 id="name">Yulia Tran</h1>
-    <img src="./images/1648410701226.jpg"alt="YuliaTran" ,
-    id="profile-picture">
+</header>
+        <div class="profile-container">
+            <img src="./images/1648410701226.jpg" alt="Yulia Tran" id="profile-picture">
+            <h1 id="name">Yulia Tran</h1>
+        </div>
     <section id="about">
         <h2>About</h2>
-        <p>I try to learn something new all the time. I love fish and cucumbers. Interested in psychology and astrology. </p>
-    </section>
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="grid-container">
-            <div class="grid-item">
-                <h3 class="date">2022-2023</h3>
-                <div class="one-experience">
-                    <h3 class="one-exp-heading">Operations and Marketing assistant</h3>
-                    <p class="exp-description">Assisting operations and marketing department in day-by-day tasks.</p>
-                </div>
+        <p>Hello friends!</p>
+        <p>I am happy to tell you about myself. I am a marketing specialist who wants to understand more about the IT world, so I took Code of the Dream class. Now I can say, that I am a marketing professional with knowledge of JavaScript, Git, HTML, CSS, and Web development basics. I am interested in SEO optimization, and project management.</p>
+        <p>My interests, apart from coding and marketing, include learning new things, self-development, psychology, anthropology, and astrology.</p>
+        <p>Lerning something new is my credo. Thank you Code of the Dream for the opotunity to learn new things.</p>
+ </section>
+ <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-grid">
+        <div class="experience-block">
+            <div class="experience-details">
+                <h3>Operations and Marketing assistant</h3>
+                <p class="date">May 2022 - September 2023</p>
             </div>
-            <div class="grid-item">
-                <h3 class="date">2021-2023</h3>
-                <div class="one-experience">
-                    <h3 class="one-exp-heading">Program Manager</h3>
-                    <p class="exp-description">Managed a children's educational project.</p>
-                </div>
-            </div>
-            <div class="grid-item">
-                <h3 class="date">2016-2021</h3>
-                <div class="one-experience">
-                    <h3 class="one-exp-heading">Career Break Due To Caregiving</h3>
-                    <p class="exp-description">While I was on leave, got a Digital Marketing Certificate.</p>
-                </div>
-            </div>
-            </div>
+            <p class="description">
+                <ul>
+                    <li> Promoted to a managerial role in recognition of my contributions.</li>
+                    <li> Supported webinars, marketing campaigns, and events including international conferences and trade shows.</li>
+                    <li> Managed event-related and website projects to enhance brand awareness.</li>
+                    <li> Researched, supported, and onboarded new vendors. </li>
+                    <li> Created event strategy by checking competitor activities, doing industry research. </li>
+                    <li> Supported staff training on new tools.</li>
+                    <li> Coordinated event and marketing budgets.</li>
+                </ul>
+                </p>
         </div>
-    </section>
+        <div class="experience-block">
+            <div class="experience-details">
+                <h3>Program Manager</h3>
+                <p class="date">March 2021 - August 2023</p>
+            </div>
+            <p class="description">Managed a children's educational project.</p>
+        </div>
+    </div>
+</section>
 
     <section id="skills">
         <h2>Skills</h2>
@@ -74,7 +89,7 @@
 </section>
 
 <section id="connect">
-    <h2>Connect</h2>
+    <h2>Connect </h2>
     
     <a href="https://www.linkedin.com/in/julia-tran1/"target="_blank" rel="noopener noreferrer"><i class="fa 
         fa-linkedin"></i></a>
@@ -107,6 +122,7 @@
     
   </ul>
 </section>
+
 <script src="js/index.js"></script>
 </body>
     
