@@ -1,11 +1,11 @@
 
-/* Base styles */
 body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
   background-color: rgba(204, 215, 175, 0.994);
   margin: 0;
   padding-top: 80px;
+  color: #444;
 }
 header {
   position: fixed;
@@ -14,6 +14,7 @@ header {
   width: 100%;
   background-color: #444444;
   z-index: 1;
+  color: #fff;
 }
 /* Navigation */
 header a,
@@ -25,15 +26,13 @@ nav select {
   font-weight: bold; 
   font-size: 16px; 
 }
-
-/* Hover effect */
 header a:hover {
   background-color: rgb(124, 136, 141); 
 }
-
 /* Style for dropdown select */
 nav select {
   display: none; 
+  color: #444;
 }
 
 nav {
@@ -50,14 +49,15 @@ nav ul {
 }
 
 nav li {
-  margin: 0 50px;
+  margin: 0 30px;
   text-align: center;
   font-weight: bold;
-  font-size: x-large;
+  font-size: large;
+  
 }
 nav a {
   text-decoration: none;
-  color: rgb(252, 251, 253);
+  color: #fff;
 }
 footer {
   bottom: 0;
@@ -80,8 +80,8 @@ footer {
 #profile-picture {
   border-radius: 50%;
   margin: 0.5em;
-  width: 50%; /* Adjusted for better mobile display */
-  max-width: 150px; /* Limit max width */
+  width: 50%; 
+  max-width: 150px; 
   border-color: rgb(139, 139, 140);
   border-width:0.5dvi;
   border-style:inset;
@@ -89,7 +89,7 @@ footer {
 
 #name {
   font-size: 3rem;
-  text-align: center; /* Center name on mobile */
+  text-align: center; 
 }
 /* Sections */
 section {
@@ -99,35 +99,30 @@ section {
 h2 {
     font-weight: bold;
     font-size: 2rem;
-    text-align: center; /* Center headings on mobile */
+    text-align: center; 
 }
 a {
-    color: rgb(120, 180, 144);
+    color: rgb(21, 31, 25);
 }
 
 /* Experience Section */
 .experience-grid {
-  display: grid; /* Change from flex to grid */
-  /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Set grid columns with automatic fitting */
-  gap: 20px; /* Add gap between grid items */
+  display: grid; 
+  gap: 20px; 
 }
 
 .experience-block {
-  background-color: #444444;
-  color: white;
   border-radius: 10px;
   border-style: ridge;
   border-color: rgb(24, 23, 24);
   padding: 10px;
   margin-bottom: 10px;
-  /*flex-basis: calc(100% - 20px);*/
-  grid-column: 1 / -1; /* Span the entire row */
+  grid-column: 1 / -1; 
 }
 
 .experience-block h3 {
   margin: 0;
 }
-
 .experience-details {
   display: flex;
   justify-content: space-between;
@@ -174,47 +169,44 @@ a {
   header a {
     display: none;
   }
-
   /* Display dropdown select on small screens */
   nav select {
     display: inline-block;
-    color: rgb(108, 106, 106);
+    
   }
   section {
-    padding-left: 15px; /* 1st change: Reduced padding */
-    padding-right: 15px; /* Additional change: Reduced padding */
+    padding-left: 15px; 
+    padding-right: 15px; 
   }
   #name {
-      font-size: 2rem; /* 1st change */
+      font-size: 2rem; 
   }
   h1 {
-    font-size: 3rem; /* 1st change: Reduced font size */
+    font-size: 3rem; 
     
   }
   h2 {
-      font-size: 2rem; /* 1st change */
+      font-size: 2rem; 
   }
   h3 {
     font-size: 1.5rem;
   }
-  
 }
-
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   section {
-    padding-left: 30px; /* 1st change: Increased padding */
-    padding-right: 30px; /* Additional change: Increased padding */
+    padding-left: 30px; 
+    padding-right: 30px; 
   }
 
   h1 {
-    font-size: 4rem; /* Increased font size for tablets */
-    font-weight: bold; /* Bold text */
+    font-size: medium; 
+    font-weight: bold; 
   }
 
   h2 {
-    font-size: 3rem; /* Increased font size for tablets */
-    font-weight: normal; /* Normal font weight */
+    font-size: 3rem; 
+    font-weight: normal; 
   }
   h3 {
     font-size: 1.5rem;
