@@ -1,2 +1,2 @@
 # Yulia-Tran-Haumea
-Portfolio Site of Yulia Tran
+Portfolio Project of Yulia Tran
