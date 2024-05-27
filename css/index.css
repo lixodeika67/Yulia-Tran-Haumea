@@ -1,6 +1,6 @@
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   height: 100vh;
   background-color: rgba(204, 215, 175, 0.994);
   margin: 0;
@@ -59,32 +59,20 @@ nav a {
   text-decoration: none;
   color: #fff;
 }
-footer {
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 49px;
-  padding: 0 20px;
-  background-color:#444444;
-  text-align: left;
-  color: white;
-  font-size: 20px; 
-} 
-/* Name */
+
+/* Profile Section */
 .profile-container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-/* Profile Section */
+
 #profile-picture {
   border-radius: 50%;
   margin: 0.5em;
-  width: 50%; 
-  max-width: 150px; 
-  border-color: rgb(139, 139, 140);
-  border-width:0.5dvi;
-  border-style:inset;
+  width: 50%;
+  max-width: 150px;
+  border: 2px inset rgb(139, 139, 140);
 }
 
 #name {
@@ -212,4 +200,14 @@ a {
     font-size: 1.5rem;
   }
 }
- 
+footer {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 49px;
+  padding: 0 20px;
+  background-color:#444444;
+  text-align: left;
+  color: white;
+  font-size: 20px; 
+} 

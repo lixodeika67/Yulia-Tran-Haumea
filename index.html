@@ -1,129 +1,102 @@
 <!DOCTYPE html>
 <html> 
 <head>
-    <title>My first website</title>
+    <title>My First Website</title>
     <meta charset="UTF-8">
     <meta name="keywords" content="Yulia, Tran, Coolgirl">
     <link rel="stylesheet" href="css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-  
-
 </head>
-<body weight="200">
+<body>
     <header>
-    <nav id="navigation">
-            <a href=#about>About</a>
-            <a href=#experience>Experience</a>
-            <a href=#skills>Skills</a>
-            <a href=#projects>Projects</a>
-            <a href=#connect>Connect</a>
-            <a href="#LeaveMessage">Leave a Message</a>  
-         <!-- Dropdown select for smaller screens -->
-         <select onchange="window.location.href=this.value;">
-            <option value="#about">About</option>
-            <option value="#experience">Experience</option>
-            <option value="#skills">Skills</option>
-            <option value="#projects">Projects</option>
-            <option value="#connect">Connect</option>
-            <option value="#LeaveMessage">Leave Message</option>
-        </select>
-    </nav>
-</header>
-        <div class="profile-container">
-            <img src="./images/1648410701226.jpg" alt="Yulia Tran" id="profile-picture">
-            <h1 id="name">Yulia Tran</h1>
-        </div>
+        <nav id="navigation">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#connect">Connect</a>
+            <a href="#leaveMessage">Leave a Message</a>  
+            <select onchange="window.location.href=this.value;">
+                <option value="#about">About</option>
+                <option value="#experience">Experience</option>
+                <option value="#skills">Skills</option>
+                <option value="#projects">Projects</option>
+                <option value="#connect">Connect</option>
+                <option value="#leaveMessage">Leave a Message</option>
+            </select>
+        </nav>
+    </header>
+    <div class="profile-container">
+        <img src="./images/1648410701226.jpg" alt="Yulia Tran" id="profile-picture">
+        <h1 id="name">Yulia Tran</h1>
+    </div>
     <section id="about">
         <h2>About</h2>
         <p>Hello friends!</p>
         <p>I am happy to tell you about myself. I am a marketing specialist who wants to understand more about the IT world, so I took Code of the Dream class. Now I can say, that I am a marketing professional with knowledge of JavaScript, Git, HTML, CSS, and Web development basics. I am interested in SEO optimization, and project management.</p>
         <p>My interests, apart from coding and marketing, include learning new things, self-development, psychology, anthropology, and astrology.</p>
-        <p>Lerning something new is my credo. Thank you Code of the Dream for the opotunity to learn new things.</p>
- </section>
- <section id="experience">
-    <h2>Experience</h2>
-    <div class="experience-grid">
-        <div class="experience-block">
-            <div class="experience-details">
-                <h3>Operations and Marketing assistant</h3>
-                <p class="date">May 2022 - September 2023</p>
-            </div>
-            <p class="description">
-                <ul>
-                    <li> Promoted to a managerial role in recognition of my contributions.</li>
-                    <li> Supported webinars, marketing campaigns, and events including international conferences and trade shows.</li>
-                    <li> Managed event-related and website projects to enhance brand awareness.</li>
-                    <li> Researched, supported, and onboarded new vendors. </li>
-                    <li> Created event strategy by checking competitor activities, doing industry research. </li>
-                    <li> Supported staff training on new tools.</li>
-                    <li> Coordinated event and marketing budgets.</li>
+        <p>Learning something new is my credo. Thank you Code of the Dream for the opportunity to learn new things.</p>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-block">
+                <div class="experience-details">
+                    <h3>Operations and Marketing Assistant</h3>
+                    <p class="date">May 2022 - September 2023</p>
+                </div>
+                <ul class="description">
+                    <li>Promoted to a managerial role in recognition of my contributions.</li>
+                    <li>Supported webinars, marketing campaigns, and events including international conferences and trade shows.</li>
+                    <li>Managed event-related and website projects to enhance brand awareness.</li>
+                    <li>Researched, supported, and onboarded new vendors.</li>
+                    <li>Created event strategy by checking competitor activities, doing industry research.</li>
+                    <li>Supported staff training on new tools.</li>
+                    <li>Coordinated event and marketing budgets.</li>
                 </ul>
-                </p>
-        </div>
-        <div class="experience-block">
-            <div class="experience-details">
-                <h3>Program Manager</h3>
-                <p class="date">March 2021 - August 2023</p>
             </div>
-            <p class="description">Managed a children's educational project.</p>
+            <div class="experience-block">
+                <div class="experience-details">
+                    <h3>Program Manager</h3>
+                    <p class="date">March 2021 - August 2023</p>
+                </div>
+                <p class="description">Managed a children's educational project.</p>
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-
-        </ul>
-        
+        <ul></ul>
     </section>
-</section>
-<section id="projects">
-    <h2>Projects</h2>
-    <ul>
-
-    </ul>
-</section>
-
-<section id="connect">
-    <h2>Connect </h2>
-    
-    <a href="https://www.linkedin.com/in/julia-tran1/"target="_blank" rel="noopener noreferrer"><i class="fa 
-        fa-linkedin"></i></a>
-    <a href="https://www.facebook.com/jefimova1/"target="_blank" rel="noopener noreferrer"><i class="fa 
-        fa-facebook"></i></a>
-    <a href="https://github.com/lixodeika67"target="_blank" rel="noopener noreferrer"><i class="fa 
-        fa-github"></i></a>
-    
-</section>
-<section id="LeaveMessage">
-    <h2>Leave a Message</h2>
-    <form name='leave_message'>
-        <label for="usersName">Name:</label>
-        <input type="text" id="usersName" name="usersName" required><br>
-        
-        <label for="usersEmail">Email:</label>
-        <input type="email" id="usersEmail" name="usersEmail" required><br>
-        
-        <label for="usersMessage">Message:</label>
-        <textarea id="usersMessage" name="usersMessage" required></textarea><br>
-        
-        <button type="submit">Submit</button>
-      </form>
-</section >
-</section>
-
-<section id="messages">
-  <h2>Messages</h2>
-  <ul>
-    
-  </ul>
-</section>
-
-<script src="js/index.js"></script>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul></ul>
+    </section>
+    <section id="connect">
+        <h2>Connect</h2>
+        <a href="https://www.linkedin.com/in/julia-tran1/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/jefimova1/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+        <a href="https://github.com/lixodeika67" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+    </section>
+    <section id="leaveMessage">
+        <h2>Leave a Message</h2>
+        <form name='leave_message'>
+            <label for="usersName">Name:</label>
+            <input type="text" id="usersName" name="usersName" required><br>
+            <label for="usersEmail">Email:</label>
+            <input type="email" id="usersEmail" name="usersEmail" required><br>
+            <label for="usersMessage">Message:</label>
+            <textarea id="usersMessage" name="usersMessage" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+    </section>
+    <script src="js/index.js"></script>
 </body>
-    
-    </html>
+</html>
